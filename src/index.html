@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NSC - ERMS</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+</head>
+<body>
+    <div id="app">
+        <aside id="sidebar">
+            <div class="brand">
+                <strong>NSC ERMS</strong>
+            </div>
+            <div id="tablist" role="tablist">
+                <button class="sidebar-btn" type="button" role="tab" id="tab-employees" aria-selected="true" tabindex="1"
+                    aria-controls="panel-employees">
+                    <svg class="icon">
+                        <use href="./assets/icons.svg#icon-employees"></use>
+                    </svg>
+                    Employees
+                </button>
+
+                <button class="sidebar-btn" type="button" role="tab" id="tab-departments" aria-selected="false" tabindex="1"
+                    aria-controls="panel-departments">
+                    <svg class="icon">
+                        <use href="./assets/icons.svg#icon-departments"></use>
+                    </svg>
+                    Departments
+                </button>
+
+                <button class="sidebar-btn" type="button" role="tab" id="tab-" aria-selected="false" tabindex="1"
+                    aria-controls="panel-export">
+                    <svg class="icon">
+                        <use href="./assets/icons.svg#icon-export"></use>
+                    </svg>
+                    Quick Export
+                </button>
+
+                <button class="sidebar-btn" type="button" role="tab" id="tab-backup" aria-selected="false" tabindex="1"
+                    aria-controls="panel-backup">
+                    <svg class="icon">
+                        <use href="./assets/icons.svg#icon-database-backup"></use>
+                    </svg>
+                    Backup & Restore
+                </button>
+
+                <button class="sidebar-btn" type="button" role="tab" id="tab-settings" aria-selected="false" tabindex="1"
+                    aria-controls="panel-settings">
+                    <svg class="icon">
+                        <use href="./assets/icons.svg#icon-settings"></use>
+                    </svg>
+                    Settings
+                </button>
+            </div>
+            <div id="logout-login" class="logout-login">
+                <button type="button">
+                    <svg class="icon">
+                        <use href="./assets/icons.svg#icon-logout"></use>
+                    </svg>
+                    Logout
+                </button>
+            </div>
+        </aside>
+        
+        <div class="content" id="content">
+            <main class="page">
+                <header class="page-header">
+                    <h1 class="page-title">
+                        This is a Page Title
+                    </h1>
+                </header>
+                <section class="page-content">
+                    <h2 class="page-subheading">This is page subheading</h2>
+                </section>
+            </main>
+        </div>
+    </div>
+</body>
+</html>
