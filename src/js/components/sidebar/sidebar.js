@@ -1,6 +1,6 @@
 import { createSidebarTab } from "./tab.js";
 
-export function renderSidebar(tabs) {
+export function renderSidebar(tabs, activeTab) {
 
 
     return /* html */ `
@@ -10,7 +10,9 @@ export function renderSidebar(tabs) {
             </div>
 
             <div class=sidebar__tablist id="tablist" role="tablist">
-            ${tabs.map(createSidebarTab).join('')}
+            ${tabs
+                .map( tab=> createSidebarTab(tab, activeTab))
+                .join('')}
             </div>
 
             <div id="logout-login" class="logout-login">

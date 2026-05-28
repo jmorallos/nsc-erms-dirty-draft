@@ -4,14 +4,15 @@
  * @returns HTMLElement
  */
 
-export function createSidebarTab(tab) {
+export function createSidebarTab(tab, activeTab) {
+    const isActive = tab.id === activeTab.id
 
     return /* html */ `
     <button 
-        class="sidebar__tab" type="button" 
+        class="sidebar__tab ${isActive ? "sidebar__tab--active" : ""}" type="button" 
         role="tab" 
         id="tab-${tab.id}" 
-        aria-selected=""
+        aria-selected="${isActive ? "true" : "false"}"
         tabindex="1" 
         aria-controls="panel-${tab.id}">
         <svg class="icon">

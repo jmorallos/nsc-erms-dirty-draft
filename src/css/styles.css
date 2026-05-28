@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    /* outline: var(--outline); */
 }
 
 :root {
@@ -83,9 +84,12 @@ body {
     color: var(--text-primary)
 }
 
-
-
 svg.icon {
     width: var(--s-lg-md);
     height: var(--s-lg-md);
+}
+
+.content {
+    min-height: var(--f-height);
+    width: var(--f-width);
 }
