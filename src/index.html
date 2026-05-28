@@ -8,12 +8,13 @@
 </head>
 <body>
     <div id="app">
-        <aside id="sidebar">
-            <div class="brand">
+        <!-- <aside id="sidebar" class="sidebar">
+            <div class="sidebar__brand">
                 <strong>NSC ERMS</strong>
             </div>
-            <div id="tablist" role="tablist">
-                <button class="sidebar-btn" type="button" role="tab" id="tab-employees" aria-selected="true" tabindex="1"
+            <div class="sidebar__tablist" id="tablist" role="tablist">
+                
+                <button class="sidebar__tab sidebar__tab--active" type="button" role="tab" id="tab-employees" aria-selected="true" tabindex="1"
                     aria-controls="panel-employees">
                     <svg class="icon">
                         <use href="./assets/icons.svg#icon-employees"></use>
@@ -21,15 +22,7 @@
                     Employees
                 </button>
 
-                <button class="sidebar-btn" type="button" role="tab" id="tab-departments" aria-selected="false" tabindex="1"
-                    aria-controls="panel-departments">
-                    <svg class="icon">
-                        <use href="./assets/icons.svg#icon-departments"></use>
-                    </svg>
-                    Departments
-                </button>
-
-                <button class="sidebar-btn" type="button" role="tab" id="tab-" aria-selected="false" tabindex="1"
+                <button class="sidebar__tab" type="button" role="tab" id="tab-" aria-selected="false" tabindex="1"
                     aria-controls="panel-export">
                     <svg class="icon">
                         <use href="./assets/icons.svg#icon-export"></use>
@@ -37,7 +30,7 @@
                     Quick Export
                 </button>
 
-                <button class="sidebar-btn" type="button" role="tab" id="tab-backup" aria-selected="false" tabindex="1"
+                <button class="sidebar__tab" type="button" role="tab" id="tab-backup" aria-selected="false" tabindex="1"
                     aria-controls="panel-backup">
                     <svg class="icon">
                         <use href="./assets/icons.svg#icon-database-backup"></use>
@@ -45,7 +38,7 @@
                     Backup & Restore
                 </button>
 
-                <button class="sidebar-btn" type="button" role="tab" id="tab-settings" aria-selected="false" tabindex="1"
+                <button class="sidebar__tab" type="button" role="tab" id="tab-settings" aria-selected="false" tabindex="1"
                     aria-controls="panel-settings">
                     <svg class="icon">
                         <use href="./assets/icons.svg#icon-settings"></use>
@@ -54,7 +47,7 @@
                 </button>
             </div>
             <div id="logout-login" class="logout-login">
-                <button type="button">
+                <button class="sidebar__tab" type="button">
                     <svg class="icon">
                         <use href="./assets/icons.svg#icon-logout"></use>
                     </svg>
@@ -63,8 +56,8 @@
             </div>
         </aside>
         
-        <div class="content" id="content">
-            <main class="page">
+        <div class="content" id="content"> -->
+            <!-- <main class="page">
                 <header class="page-header">
                     <h1 class="page-title">
                         Employees
@@ -100,8 +93,10 @@
                         <div></div>
                     </div>
                 </section>
-            </main>
+            </main> -->
         </div>
     </div>
+
+    <script type="module" src="./js/app.js"></script>
 </body>
 </html>
